@@ -9,6 +9,61 @@
   	<meta name="author" content="Clementine">
     <title>Site WEB de Clementine</title>
     <link rel="stylesheet" href="css/body.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/fontawesome.min.js">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+<style>
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  }
+
+body{
+  background:#f2f3f7;
+  }
+
+.content{
+  text-align:center;
+} 
+
+h1{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size:40px;
+  color:#707070;
+  background: none;
+
+}
+
+h2{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size:30px;
+  color:707070;
+  padding:20px 20px;
+}
+
+.mfp-hide{
+  display: none !important;
+}
+
+iframe{
+  margin-left:450px;
+}
+
+</style>
+
   </head>
 
  <body>
@@ -30,8 +85,23 @@
 	  <div class="container">
 		<section class="presentation">
                 <h1>Clémentine Cheyrou-Lagreze</h1>
-                <a href="presentation-video.mp4" download class="bouton_a_propos ">C'est ici pour en savoir plus</a>
-      
+                <a href="#videostory" class="bouton_a_propos" id="videolink"/>C'est ici pour en savoir plus
+                  <i class="fa fa-play-circle" aria-hidden="true">&nbsp;</i>
+                </a>
+
+                <div id="videostory" class="mfp-hide" style="max-width:75%";margin: 0 auto;>
+                  
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/Cv-zlYW4Yg8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                </div>
+     
+      <script>
+      $('#videolink').magnificPopup({
+          type: 'inline',
+          midClick: true,
+  })
+      </script>
+
         </section>
 	  </div>
 	 
@@ -40,6 +110,7 @@
 
 	   <section class="photo">
 	          <img src="images/clementine-personne.png" width="400" height="520" style="float:left"; alt="photo de clementine"/>
+
 	   </section>
 		    
 	   <section class="box"> 
@@ -65,7 +136,7 @@
                  <li>Nom</li>
                  <li>Date de naissance</li>
                  <li>Email</li>
-                 <li>Telephone</li>
+                 <li>Téléphone</li>
             </ul>
    	  		</div>
 
