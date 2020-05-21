@@ -6,6 +6,7 @@ body{
   background:#f2f3f7;
 }
 
+
 /* Global */
 .container{
   width:80%;
@@ -22,7 +23,7 @@ ul{
 .bouton_a_propos {
 	display:block;
 	margin:auto;
-	width:200px;
+	width:240px;
 	line-height:40px;
 	text-align: center;
 	vertical-align:middle;
@@ -39,6 +40,12 @@ ul{
 	margin-top:80px;
 	margin-bottom: 35px;
 	font-family:'roboto';
+}
+
+.bouton_a_propos:hover, .bouton_a_propos:focus{
+	text-decoration: none;
+	background:transparent;
+	color:#fcc300;
 }
 
 .bouton_CV{
@@ -61,7 +68,11 @@ ul{
 	color:#000000;
 	text-decoration:none;
 }
-
+.bouton_CV:hover, .bouton_CV:focus{
+		text-decoration: none;
+		background:transparent;
+		color:#fcc300;
+}
 /*Font*/
 h1{
 	font-family: 'Poppins', sans-serif;
@@ -152,6 +163,7 @@ header .highlight, header .current a{
 header a:hover{
   color:#000000;
   font-size: 14px;
+  text-decoration: none;
 }
 
 /* Presention */
@@ -181,7 +193,7 @@ header a:hover{
   float:right;
   padding: 0% 6% 4% 6%;
   border-radius:50px;
-  margin: 20px 20px 20px 0px;
+  margin: 20px 40px 20px 20px;
   box-shadow:-2px -2px 5px rgba(255,255,255,1),
 			   -2px -2px 12px rgba(255,255,255,0.5),
 	           inset 2px 2px 4px rgba(255,255,255,0.1),
@@ -219,7 +231,7 @@ header a:hover{
 }
 .content{
 	width:55%;
-	height:1650px;
+	height:1700px;
 	float:right;
 	margin-top:15px;
 	line-height:1em;
@@ -248,7 +260,7 @@ header a:hover{
 	text-align:center;
 	padding-bottom: 10px;
 }	
-.video1,.video2 , .video3{
+.video1, .video2 , .video3{
 	display:inline;
 	padding: 0 0 0 10px;
 }
@@ -265,6 +277,7 @@ header a:hover{
 }	
 .nom, .email{
 	border:1px #f2f3f7;
+	background:#f2f3f7;
 	padding:10px 208px 10px 10px;
 	box-shadow:-2px -2px 5px rgba(255,255,255,1),
 			   -2px -2px 12px rgba(255,255,255,0.5),
@@ -276,6 +289,7 @@ header a:hover{
 
 .message{
 	border-color:#f2f3f7;
+	background:#f2f3f7;
 	padding:10px 32px 10px 10px;
 	box-shadow:-2px -2px 8px rgba(255,255,255,1),
 			   -2px -2px 12px rgba(255,255,255,0.5),
@@ -294,12 +308,44 @@ header a:hover{
 		       2px 2px 8px rgba(0,0,0,0.15);
 	border-radius: 8px ;
 }
+/*telephone*/
 
+@media screen and (max-width: 600px) {
+  .container{
+ 	width: 80%;
+ 	padding:0;
+ 	height:auto;
+ 	}
+  .message, .nom, .email, .submit{
+    width: 95%;
+    padding:0;
+  }
+video{
+	width:100%;
+	height:auto;
+	display:block;
+	margin-top: 10px;
+}
 
+  .presentation{
+ 	width: 100%;
+    padding:10px 50px 20px;
+    background-position:center center;
+  }
+	.a_propos{
+    display: none;
+  }
+  .content{
+	width:100%;
+	height:1800px;
+ }
+  .menu{
+  	display:none;
+}
+}
 footer p{
   text-align:center;
   font-family: 'Poppins', sans-serif;
   color:#707070;
   padding-top:20px;
 }
-
